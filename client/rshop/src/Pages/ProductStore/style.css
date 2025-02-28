@@ -1,0 +1,36 @@
+.store-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 8px;
+}
+
+.store-container .store-header {
+  grid-column: 1/13;
+  margin: 0.8rem 0;
+}
+
+.store-container .store-header h1 {
+  font-size: var(--font-size-title);
+  font-weight: var(--font-bolder);
+}
+
+.store-container .store-header .store-description {
+  width: 100%;
+  margin: 1rem 0;
+  color: #878787;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.store-container .store-header .store-description span {
+  line-height: 1.45;
+  font-size: 1.2rem;
+}
+
+.store-grid-container {
+  grid-column: 1/13;
+  display: block;
+}
+
+

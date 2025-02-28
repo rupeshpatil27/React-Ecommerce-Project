@@ -1,0 +1,306 @@
+
+/* Home Page Product Slider List Card Style Start */
+
+.home-product-card {
+  width: 21.5rem;
+  height: 100%;
+  position: relative;
+  /* padding: 0.4rem; */
+  scroll-snap-align: start;
+}
+
+.home-product-card .card {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
+  border: 0.1rem solid #ebebeb;
+  border-radius: var(--border-radius);
+  margin: 0.8rem;
+  padding: 0.8rem;
+  cursor: pointer;
+}
+
+.home-product-card .product-image {
+  aspect-ratio: 1 / 1;
+  flex: 1;
+  overflow: hidden;
+}
+
+.home-product-card .product-image img {
+  width: 100%;
+  margin: auto;
+  display: block;
+  padding: inherit;
+  object-fit: cover;
+  flex-shrink: 0;
+  flex-grow: 0;
+  aspect-ratio: 1 / 1;
+  transition: scale 100ms ease-in-out;
+}
+
+.home-product-card:hover img {
+  scale: 1.1;
+}
+
+.home-product-card .home-product-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.8rem;
+}
+
+.home-product-card .home-product-info .product-name {
+  font-size: var(--font-size-1);
+  font-weight: var(--font-normal);
+  color: #000;
+}
+
+.home-product-card .home-product-info .product-price {
+  font-size: var(--font-size-1);
+  font-weight: var(--font-semibold);
+  color: #000;
+  margin-top: 0.4rem;
+}
+
+.card-slider .card-container .card-body .card-list.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+
+.card-slider .card-container .card-body .card-list.dragging .home-product-card {
+  cursor: grab;
+  user-select: none;
+}
+
+
+/* Home Page Product Image small Card Style Start */
+
+
+.home-image-product-card {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-grow: 1;
+  flex-direction: column;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+.home-image-product-card .img-con {
+  aspect-ratio: 10/8;
+  flex: 1;
+  overflow: hidden;
+}
+
+.home-image-product-card .img-con img {
+  width: 100%;
+  margin: auto;
+  display: block;
+  padding: inherit;
+  object-fit: cover;
+  flex-shrink: 0;
+  flex-grow: 0;
+  aspect-ratio: 10/8;
+}
+
+.home-image-product-card .details-con {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0.5rem 0 0 0;
+  margin: 0.2rem 0;
+}
+
+.home-image-product-card .details-con .product-nm {
+  font-size: 1rem;
+  font-weight: var(--font-bold);
+  color: #000;
+}
+
+/* manteck venture
+monthan */
+
+/* Product List Page Product Card Style Start */
+
+.product-card {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  padding: 0 1rem 2rem;
+  flex-direction: column;
+}
+
+.product-card .card {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  height: 100%;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.product-card .card:hover {
+  box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.11);
+  border-radius: var(--border-radius);
+}
+
+.product-card .card .product-image-con {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border: none;
+  margin-bottom: 0.5rem;
+
+  /* padding-top: 120%; */
+}
+
+.product-card .card .product-image-con .product-image {
+  position: relative;
+  margin: 0 auto;
+  aspect-ratio: 5/6;
+
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 120%; */
+}
+
+.product-card .card .product-image-con .product-image img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  opacity: 1;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.product-card .card .product-whishlist {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.product-card .card:hover .product-whishlist {
+  display: block;
+}
+
+.product-card .card .product-whishlist .icon {
+  color: #c2c2c2;
+  font-size: 2rem;
+  stroke: transparent;
+}
+
+.product-card .card .product-info {
+  position: relative;
+  padding: 1rem 1rem 0.2rem;
+  margin-top: 1rem;
+  background-color: #fff;
+  box-sizing: border-box;
+  transform: translate3d(0px, 0px, 0px);
+  transition: transform 0.35s cubic-bezier(0.17, 0.67, 0.21, 1);
+  z-index: 3;
+}
+
+.product-card:hover .product-info {
+  transform: translate3d(0px, -35.6px, 0px);
+}
+
+.product-card .card .product-info .product-brand-name {
+  font-size: var(--font-size-3);
+  font-weight: var(--font-bolder);
+  line-height: 1;
+  color: #282c3f;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.product-card .card .product-info .product-name {
+  display: block;
+  color: #535766;
+  font-size: var(--font-size-1);
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 0;
+  margin-top: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.product-card .card .product-info .product-price {
+  display: block;
+  margin: 1rem 0 0.5rem;
+  line-height: 1.5rem;
+  font-size: var(--font-size-1);
+  font-weight: var(--font-bolder);
+  color: #282c3f;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.product-card .card .product-info .product-price .product-discounted-price {
+  font-size: var(--font-size-3);
+  font-weight: var(--font-bolder);
+  color: #282c3f;
+}
+
+.product-card .card .product-info .product-price .product-retail-price {
+  text-decoration: line-through;
+  color: #7e818c;
+  font-weight: 400;
+  margin-left: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.product-card .card .product-info .product-price .product-discount-percentage {
+  font-size: 1.3rem;
+  font-weight: var(--font-bolder);
+  margin-left: 0.5rem;
+  color: #388e3c;
+}
+
+.product-card .card .product-info .xcelerator-info-tag {
+  font-size: 1.2rem;
+  color: var(--color-primary);
+  font-weight: 700;
+  text-align: left;
+}
+
+.product-card .card .product-info .product-size {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  padding: 1rem 0 12px;
+}
+
+.product-card .card .product-info .product-size span {
+  color: #7e818c;
+  font-weight: var(--font-bold);
+  margin-left: 1rem;
+  font-size: 1.4rem;
+}
+
+
+

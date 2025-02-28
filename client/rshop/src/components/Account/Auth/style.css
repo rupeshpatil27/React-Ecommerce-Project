@@ -1,0 +1,140 @@
+
+/* login container style start */
+
+.login-container {
+    width: 40rem;
+    height: 50vh;
+    position: relative;
+    padding: 2.5rem 4rem 2rem;
+    border-radius: var(--border-radius);
+    background-color: var(--color-background);
+    margin: 0 auto;
+    box-sizing: border-box;
+    box-shadow: 2px 3px 5px -1px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    animation: move 0.5s ease;
+}
+
+@keyframes move {
+    0% {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.login-container .title {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: var(--font-semibold);
+    color: #282c3f;
+}
+
+.login-container .login-form {
+    width: 100%;
+    display: block;
+    margin-top: 5rem;
+}
+
+.login-container .login-form .error-msg {
+    width: 100%;
+    display: block;
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+    color: red;
+    text-align: left;
+}
+
+.login-container .link-container {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    margin: 2rem 0;
+}
+
+.login-container .link-container .link {
+    width: 100%;
+    display: block;
+    color: var(--color-primary);
+    font-size: var(--font-size-1);
+    font-weight: var(--font-normal);
+    text-align: center;
+    text-decoration: none;
+    border: none;
+}
+
+/* signup container style start */
+
+.signup-container {
+    width: 40rem;
+    height: 50vh;
+    position: relative;
+    padding: 2.5rem 4rem 2rem;
+    border-radius: var(--border-radius);
+    background-color: var(--color-background);
+    margin: 0 auto;
+    box-sizing: border-box;
+    box-shadow: 2px 3px 5px -1px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    animation: move 0.5s ease;
+}
+
+@keyframes move {
+    0% {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.signup-container .title {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: var(--font-semibold);
+    color: #282c3f;
+}
+
+.signup-container .signup-form {
+    width: 100%;
+    display: block;
+    margin-top: 5rem;
+}
+
+.signup-container .signup-form .error-msg {
+    width: 100%;
+    display: block;
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+    color: red;
+    text-align: left;
+}
+
+.signup-container .link-container {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    margin: 2rem 0;
+}
+
+.signup-container .link-container .link {
+    width: 100%;
+    display: block;
+    color: var(--color-primary);
+    font-size: var(--font-size-1);
+    font-weight: var(--font-normal);
+    text-align: center;
+    text-decoration: none;
+    border: none;
+}
+
+

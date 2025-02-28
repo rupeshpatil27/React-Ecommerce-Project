@@ -1,0 +1,105 @@
+.filter-wrapper {
+  width: 100%;
+  display: block;
+}
+
+.filter-wrapper .filter-container {
+  box-sizing: border-box;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.filter-wrapper .filter-container .header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+
+  cursor: pointer;
+}
+
+.filter-wrapper .filter-container .title {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: var(--font-semibold);
+}
+
+.filter-wrapper .filter-container .btn-con {
+  display: block;
+}
+
+.filter-wrapper .filter-container .btn-con .icon {
+  color: var(--color-gray-2);
+  font-size: 2rem;
+  transform: rotate(0);
+  transition: all 0.2s ease-in-out;
+}
+
+.filter-wrapper .filter-container .filter {
+  display: none;
+  box-sizing: border-box;
+  padding: 0 1.6rem 1.5rem;
+  /* background-color: red; */
+}
+
+.filter-wrapper .filter-container .filter.active {
+  display: block;
+}
+
+.filter-wrapper .filter-container .header.active .icon {
+  transform: rotate(180deg);
+}
+
+.filter-wrapper .filter-container .filter .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  /* background-color: blue; */
+}
+
+.filter-wrapper .filter-container .filter .content .filter-item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1.3rem;
+  padding: 0.5rem 0;
+  width: 100%;
+}
+
+.filter-wrapper .filter-container .filter .content .filter-item .checkbox {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.2rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+
+.filter-wrapper .filter-container .filter .content .filter-item .checkbox:checked {
+  background-color:var(--color-primary);
+  position: relative;
+}
+
+.filter-wrapper .filter-container .filter .content .filter-item .checkbox:checked::before {
+  content: "\2714";
+  font-size: 1.2em;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.filter-wrapper .filter-container .filter .content .filter-item label {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #212121;
+}
+

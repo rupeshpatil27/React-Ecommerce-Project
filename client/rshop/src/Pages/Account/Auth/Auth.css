@@ -1,0 +1,72 @@
+.auth-wrapper {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0.8rem 2rem 2rem;
+}
+
+.auth-wrapper .input-container {
+    position: relative;
+    width: 100%;
+}
+
+.auth-wrapper .input-container .input-box {
+    width: 100%;
+    font-size: var(--font-size-2);
+    color: #000;
+    padding: 1rem 1rem 1rem 1.5rem;
+    border: 0.2rem solid var(--color-light);
+    border-radius: var(--border-radius);
+    background: #fff;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+.auth-wrapper .input-container .input-box:focus,
+.auth-wrapper .input-container .input-box:valid {
+    border: 0.2rem solid var(--color-primary);
+}
+
+.auth-wrapper .input-container .input-box.error {
+    border-color: red;
+}
+
+.auth-wrapper .input-container .label-txt {
+    color: #878787;
+    font-size: var(--font-size-2);
+    font-weight: var(--font-normal);
+    position: absolute;
+    pointer-events: none;
+    left: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.2s ease;
+    transform-origin: left;
+}
+
+.auth-wrapper .input-container .input-box:focus+.label-txt,
+.auth-wrapper .input-container .input-box:valid+.label-txt {
+    top: 0;
+    transform: translate(-0.8rem, -50%) scale(0.77);
+    color: var(--color-primary);
+    z-index: 1;
+    background-color: #fff;
+    padding: 0 0.8rem;
+}
+
+.auth-wrapper .input-container .input-box.error+.label-txt {
+    color: red;
+}
+
+
+.auth-wrapper .login-signup-btn {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 2.5rem;
+    border-radius: var(--border-radius);
+    font-size: var(--font-size-2);
+    letter-spacing: 0.1rem;
+    font-weight: var(--font-normal);
+    color: #fff;
+    background-color: var(--color-primary);
+    cursor: pointer;
+}

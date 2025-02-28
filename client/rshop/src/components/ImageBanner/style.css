@@ -1,0 +1,142 @@
+/* annoucement Image Banner */
+
+.image-announcement-banner {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.image-announcement-banner .image-banner {
+  width: 100%;
+  display: block;
+}
+
+.image-announcement-banner .image-banner .image-con {
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-announcement-banner .image-banner .image-con img {
+  width: 100%;
+  margin: auto;
+  display: block;
+  padding: inherit;
+  object-fit: cover;
+  flex-shrink: 0;
+  flex-grow: 0;
+  aspect-ratio: 211 / 30;
+}
+
+/* flex Image Banner */
+
+.image-flex-banner {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.image-flex-banner .image-banner {
+  width: 100%;
+  display: block;
+}
+
+.image-flex-banner .image-banner .image-banner-link {
+  display: block;
+  width: 100%;
+  color: inherit;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.image-flex-banner .image-banner .image-banner-link .image-con {
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-flex-banner .image-banner .image-banner-link .image-con img {
+  width: 100%;
+  margin: auto;
+  display: block;
+  padding: inherit;
+  object-fit: cover;
+  flex-shrink: 0;
+  flex-grow: 0;
+  aspect-ratio: 211 / 43;
+}
+
+/* product Image Banner */
+
+/* .image-banner-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  display: block;
+}
+
+.image-banner-container .imageBaner {
+  grid-column: 1/5;
+  width:33.33%;
+  padding: 0 0.4rem;
+  display: inline-block;
+  vertical-align: top;
+} */
+
+.image-banner-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.image-banner-container .image-banner {
+  width: 100%;
+  display: block;
+}
+
+.image-banner-container .image-banner .image-banner-link {
+  display: block;
+  width: 100%;
+  border-radius: var(--border-radius);
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.08);
+  color: inherit;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  overflow: hidden;
+}
+
+.image-banner-container .image-banner .image-banner-link .image-con {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  /* padding-top: 50%; */
+}
+
+.image-banner-container .image-banner .image-banner-link .image-con img {
+  /* position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%; */
+
+  width: 100%;
+  margin: auto;
+  display: block;
+  padding: inherit;
+  object-fit: cover;
+  flex-shrink: 0;
+  flex-grow: 0;
+}

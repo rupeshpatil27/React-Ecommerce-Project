@@ -1,0 +1,31 @@
+.main-container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.main-container .container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* overflow-y: auto; */
+}
+
+.main-container .container .pages-container {
+  flex: 1;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.main-container .container .pages-container .pages {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  /* margin: 0 1.5rem; */
+  /* padding: 0 1.5rem; */
+  /* padding: 1rem 1.5rem 1.5rem; */
+}
+

@@ -1,0 +1,109 @@
+.otp-wrapper {
+  width: 100%;
+  margin: 0.8rem 2rem 2rem;
+}
+
+.otp-container {
+  width: 35rem;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  border-radius: var(--border-radius);
+  background-color: var(--color-background);
+  overflow: hidden;
+  box-shadow: 2px 3px 5px -1px rgba(0, 0, 0, 0.5);
+}
+
+.otp-container p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #464646;
+  margin-top: 2.5rem;
+  line-height: 2.2rem;
+  text-align: center;
+}
+
+.otp-container .email {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #464646;
+  text-align: center;
+}
+
+.otp-container .email .link{
+  color: var(--color-primary);
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-decoration: none;
+  border: none;
+  margin-left: 0.5rem;
+}
+
+.otp-container .otp-form {
+  width: 100%;
+  display: block;
+  padding: 0 2rem;
+  margin-top: 5rem;
+}
+
+.otp-container .otp-form .otp-input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.otp-container .otp-form .otp-input-container .input-box {
+  width: 4.5rem;
+  height: 4.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: var(--font-bold);
+  color: #000;
+  border: none;
+  outline: none;
+  background-color: var(--color-light-gray);
+  border-radius: var(--border-radius);
+}
+
+.otp-container .otp-form .otp-input-container .input-box:focus {
+  border: 0.2rem solid var(--color-primary);
+  outline: none;
+}
+
+.otp-container .otp-form .otp-btn {
+  width: 100%;
+  padding: 1rem 2.2rem;
+  margin-top: 4rem;
+  border: 1px solid transparent;
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-1);
+  letter-spacing: 0.1rem;
+  font-weight: var(--font-bold);
+  color: #fff;
+  background-color: var(--color-primary);
+  cursor: pointer;
+}
+
+.otp-container .resend {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--color-gray-2);
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.otp-container .resend .link{
+  color: var(--color-primary);
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+  border: none;
+  margin-left: 0.5rem;
+}
+

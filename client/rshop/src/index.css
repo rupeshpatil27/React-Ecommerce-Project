@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap");
+
+:root {
+  /* 866528 */
+  --color-primary: #286586;
+  --color-primary-light: rgb(238, 241, 245);
+  --color-primary-dark: #155697;
+  --color-red: #e32227;
+  --color-green: #00a300;
+
+  --color-gray: #757575;
+  --color-gray-2: #878787;
+  --color-light-gray: #f6f6f6;
+
+  --color-light: rgba(132, 139, 200, 0.18);
+
+  --color-background: #fff;
+
+  --color-container-background: #fff;
+
+  --color-primary-background: #fff;
+
+  --border-radius: 0.6rem;
+
+  --box-shadow-1: 2px 3px 5px -1px rgba(0, 0, 0, 0.5);
+
+  --card-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16);
+
+  --font-size-1: 1.4rem;
+  --font-size-2: 1.5rem;
+  --font-size-3: 1.6rem;
+
+  --font-size-title:1.8rem;
+
+
+  --icon-size-small:1.4rem;
+  --icon-size-normal:1.8rem;
+  --icon-size-big:2.4rem;
+
+  --icon-size: 2.4rem;
+  --arrow-icon-size: 1.7rem;
+
+  --font-normal: 400;
+  --font-bold: 500;
+  --font-semibold: 600;
+  --font-bolder: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  appearance: 0;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+
+  font-size: 10px;
+  /* font-family: "Roboto", serif; */
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: var(--font-normal);
+  font-style: normal;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-light-gray);
+  user-select: none;
+  text-decoration: none;
+  list-style: none;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
