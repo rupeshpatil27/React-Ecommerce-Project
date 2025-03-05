@@ -5,28 +5,28 @@
 
 :root {
   /* 866528 */
-  --color-primary: #286586;
+  /* --color-primary: #286586;
+  --color-primary-dark: #155697; */
+
+  --color-primary: #0a66c2;
+  --color-primary-dark: #004182;
   --color-primary-light: rgb(238, 241, 245);
-  --color-primary-dark: #155697;
+
   --color-red: #e32227;
   --color-green: #00a300;
 
   --color-gray: #757575;
   --color-gray-2: #878787;
   --color-light-gray: #f6f6f6;
-
   --color-light: rgba(132, 139, 200, 0.18);
 
   --color-background: #fff;
-
   --color-container-background: #fff;
-
   --color-primary-background: #fff;
 
   --border-radius: 0.6rem;
 
   --box-shadow-1: 2px 3px 5px -1px rgba(0, 0, 0, 0.5);
-
   --card-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16);
 
   --font-size-1: 1.4rem;
@@ -34,7 +34,6 @@
   --font-size-3: 1.6rem;
 
   --font-size-title:1.8rem;
-
 
   --icon-size-small:1.4rem;
   --icon-size-normal:1.8rem;
