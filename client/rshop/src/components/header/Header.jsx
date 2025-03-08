@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import "./Header.css";
 import { useSelector } from "react-redux";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 import { CategoriesNav, Dropdown, DropDownMenu } from "../index";
 
@@ -16,6 +16,10 @@ const Header = () => {
 
   const { isAuthenticated, userData } = useSelector((state) => state.auth);
   const [productList, SetProductList] = useState([]);
+
+  const location = useLocation()
+  const homePathPattern = /^\/$/
+  const isHome = homePathPattern.test(location.pathname)
 
   useEffect(() => {
     async function getProductList() {
@@ -111,7 +115,7 @@ const Header = () => {
           </div>
         </div>
 
-        {/* <CategoriesNav /> */}
+        {!isHome && <CategoriesNav />}
       </div>
     </>
   );
