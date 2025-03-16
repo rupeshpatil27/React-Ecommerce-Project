@@ -18,10 +18,9 @@
 }
 
 .header-container .header .logo-container {
-  width: 12%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  padding-right: 1rem;
+  padding-left: 2rem;
 }
 
 .header-container .header .logo-container .logo-txt {
@@ -44,8 +43,8 @@
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  /* height: 4rem; */
   margin-left: 1rem;
+  height: 4rem;
   background-color: var(--color-light-gray);
   border-radius: var(--border-radius);
 }
@@ -86,8 +85,8 @@
 }
 
 .header-container .header .header-nav-link-container {
-  width: 43%;
-  padding-left: 2.5rem;
+  padding-left: 1.5rem;
+  display: block;
 }
 
 .header-container .header .header-nav-link-container .header-links {
@@ -96,29 +95,26 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 1rem;
   list-style: none;
 }
 
 .header-container .header .header-nav-link-container .header-links .link-item {
   display: flex;
   align-items: center;
-  justify-content: center;
-  border-radius: var(--border-radius);
-  cursor: pointer;
   white-space: nowrap;
+  padding: 0 1.5rem;
 }
 
 .header-container .header .header-nav-link-container .header-links .link-item .nav-link {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   font-size: var(--font-size-2);
-  padding: 1rem;
+  border-radius: var(--border-radius);
+  box-sizing: border-box;
+  padding: 0.8rem;
   color: #000;
   gap: 0.6rem;
-  overflow: hidden;
-  cursor: pointer;
 }
 
 .header-container .header .header-nav-link-container .header-links .link-item .nav-link .icon {
@@ -136,15 +132,15 @@
   transition: 0.3s;
 }
 
-.header-container .header .header-nav-link-container .header-links .link-item:first-child:hover {
+.header-container .header .header-nav-link-container .header-links .link-item:first-child .nav-link:hover {
   background-color: var(--color-primary);
 }
 
-.header-container .header .header-nav-link-container .header-links .link-item:first-child:hover .icon-con .icon {
+.header-container .header .header-nav-link-container .header-links .link-item:first-child .nav-link:hover .icon-con .icon {
   transform: rotate(180deg);
 }
 
-.header-container .header .header-nav-link-container .header-links .link-item:first-child:hover .nav-link {
+.header-container .header .header-nav-link-container .header-links .link-item:first-child .nav-link:hover {
   color: #fff;
 }
 

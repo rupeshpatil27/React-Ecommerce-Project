@@ -6,7 +6,7 @@ import { NavLink, useLocation } from "react-router-dom";
 
 import { CategoriesNav, Dropdown, DropDownMenu } from "../index";
 
-import { DropDownMenuItem, HeaderNavItem } from "../../common/Element";
+import { DropDownMenuItem} from "../../common/Element";
 import { icons } from "../../common/Path";
 
 const Header = () => {
@@ -65,43 +65,46 @@ const Header = () => {
                 setHovering(false);
               }}
             >
-              {HeaderNavItem.map((item, index) =>
-                index === 0 ? (
-                  <li
-                    className="link-item"
-                    key={item.title}
-                    onMouseEnter={(event) => {
-                      onMouseEnter(event.currentTarget);
-                    }}
-                  >
-                    <NavLink
-                      to={isAuthenticated ? "/" : item.path}
-                      className="nav-link"
-                    >
-                      {item.img}
-                      {isAuthenticated
-                        ? userData?.data?.user?.user_first_name
-                          ? userData.data.user.user_first_name
-                          : "Account"
-                        : item.title}
-                      <div className="icon-con">{icons.arrowdown}</div>
-                    </NavLink>
-                  </li>
-                ) : (
-                  <li
-                    className="link-item"
-                    key={item.title}
-                    onMouseEnter={() => {
-                      setHovering(false);
-                    }}
-                  >
-                    <NavLink to={item.path} className="nav-link">
-                      {item.img}
-                      {item.title}
-                    </NavLink>
-                  </li>
-                )
-              )}
+              <li className="link-item">
+                <NavLink to={isAuthenticated ? "/" : "/auth"} className="nav-link" onMouseEnter={(event) => {
+                onMouseEnter(event.currentTarget);
+              }}>
+                  {icons.Account}
+                  {isAuthenticated
+                    ? userData?.data?.user?.user_first_name
+                      ? userData.data.user.user_first_name
+                      : "Account"
+                    : "Login"}
+                  <div className="icon-con">{icons.arrowdown}</div>
+                </NavLink>
+              </li>
+
+              <li className="link-item" onMouseEnter={() => {
+                setHovering(false);
+              }}>
+                <NavLink to="/cart" className="nav-link">
+                  {icons.cart}
+                  Cart
+                </NavLink>
+              </li>
+
+              <li className="link-item" onMouseEnter={() => {
+                setHovering(false);
+              }}>
+                <NavLink to="/wishlist" className="nav-link">
+                  {icons.heart}
+                  Whishlist
+                </NavLink>
+              </li>
+
+              <li className="link-item" onMouseEnter={() => {
+                setHovering(false);
+              }}>
+                <NavLink to="/cart" className="nav-link">
+                  {icons.customercare}
+                  Customer Care
+                </NavLink>
+              </li>
 
               <DropDownMenu
                 hovering={hovering}
@@ -123,33 +126,40 @@ const Header = () => {
 
 export default Header;
 
-{
-  /* {!isAuthenticated && <li>
-                <NavLink to="/auth" className="nav-link">
-                  <MdOutlineAccountCircle className="header-icn" />
-                  Login
-                  <MdKeyboardArrowDown className="arrow-icn" />
-                </NavLink>
-              </li>}
-
-              <li>
-                <NavLink to="/cart" className="nav-link">
-                  <MdOutlineShoppingCart className="header-icn" />
-                  Cart
-                </NavLink>
-              </li>
-
-              <li>
-                <NavLink to="/wishlist" className="nav-link">
-                  <AiOutlineHeart className="header-icn" />
-                  Whishlist
-                </NavLink>
-              </li>
-
-              <li>
-                <NavLink to="/cart" className="nav-link">
-                  <AiOutlineCustomerService className="header-icn" />
-                  Customer Care
-                </NavLink>
-              </li> */
-}
+{/* {HeaderNavItem.map((item, index) =>
+  index === 0 ? (
+    <li
+      className="link-item"
+      key={item.title}
+      onMouseEnter={(event) => {
+        onMouseEnter(event.currentTarget);
+      }}
+    >
+      <NavLink
+        to={isAuthenticated ? "/" : item.path}
+        className="nav-link"
+      >
+        {item.img}
+        {isAuthenticated
+          ? userData?.data?.user?.user_first_name
+            ? userData.data.user.user_first_name
+            : "Account"
+          : item.title}
+        <div className="icon-con">{icons.arrowdown}</div>
+      </NavLink>
+    </li>
+  ) : (
+    <li
+      className="link-item"
+      key={item.title}
+      onMouseEnter={() => {
+        setHovering(false);
+      }}
+    >
+      <NavLink to={item.path} className="nav-link">
+        {item.img}
+        {item.title}
+      </NavLink>
+    </li>
+  )
+)} */}

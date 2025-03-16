@@ -109,7 +109,7 @@ const LogIn = ({ showSignup }) => {
             aria-invalid={errors.email ? "true" : "false"}
             className={`input-box${errors.email ? " error" : ""}`}
             required
-            autoComplete="on"
+            autoComplete="off"
           />
           <label className="label-txt">Enter Email</label>
         </div>

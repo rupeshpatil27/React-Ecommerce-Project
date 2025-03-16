@@ -1,0 +1,58 @@
+.cart-container-wrapper {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 1rem 5rem 2rem;
+}
+
+.cart-container-wrapper .cart-container {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 1px 8px 0 rgba(0,0,0,.06);
+}
+
+.cart-container-wrapper .cart-container .empty-cart-container{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 5rem;
+}
+
+.cart-container-wrapper .cart-container .empty-cart-container .image{
+    height: 15rem;
+}
+
+.cart-container-wrapper .cart-container .empty-cart-container p{
+    line-height: 3rem;
+}
+
+.cart-container-wrapper .cart-container .empty-cart-container .text-1{
+    font-size: var(--font-size-3);
+    font-weight: var(--font-normal);
+    margin-top: 1rem;
+}
+
+.cart-container-wrapper .cart-container .empty-cart-container .text-2{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.cart-container-wrapper .cart-container .empty-cart-container  .login-btn{
+    padding: 1rem 7rem;
+    margin-top: 1rem;
+    border-radius: var(--border-radius);
+    font-size: var(--font-size-2);
+    letter-spacing: 0.1rem;
+    font-weight: var(--font-normal);
+    color: #fff;
+    background-color: var(--color-primary);
+    cursor: pointer;
+    transition:background-color 200ms;
+}
+
+.cart-container-wrapper .cart-container .empty-cart-container  .login-btn:hover{
+    background-color: var(--color-primary-dark);
+}
