@@ -47,7 +47,7 @@ const Header = () => {
           </a>
 
           <div className="serach-container">
-            <Dropdown productList={productList} />
+            <Dropdown data={productList} />
 
             <div className="search-input-container">
               <input
