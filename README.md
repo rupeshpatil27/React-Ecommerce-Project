@@ -57,5 +57,5 @@ This is a full-stack e-commerce web application that provides a seamless user ex
 ### 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/e-commerce-web-app.git
+git clone https://github.com/rupeshpatil27/React-Ecommerce-Project.git
 cd e-commerce-web-app
