@@ -58,4 +58,4 @@ This is a full-stack e-commerce web application that provides a seamless user ex
 
 ```bash
 git clone https://github.com/rupeshpatil27/React-Ecommerce-Project.git
-cd e-commerce-web-app
+cd React-Ecommerce-Project
