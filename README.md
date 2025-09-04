@@ -22,14 +22,14 @@ This is a e-commerce web application that provides a seamless user experience, s
 ## Project Screenshots 📸
 
 <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between;">
-  <img src="./client/rshop/public/preview1.png" width="450" height="350" />
-  <img src="./client/rshop/public/preview2.png" width="450" height="350" />
-  <img src="./client/rshop/public/preview3.png" width="450" height="350" />
-  <img src="./client/rshop/public/preview4.png" width="450" height="350" />
-  <img src="./client/rshop/public/preview5.png" width="450" height="350" />
-  <img src="./client/rshop/public/preview6.png" width="450" height="350" />
-  <img src="./client/rshop/public/preview7.png" width="450" height="350" />
-  <img src="./client/rshop/public/preview8.png" width="450" height="350" />
+  <img src="./client/rshop/public/preview1.png" width="400" height="300" />
+  <img src="./client/rshop/public/preview2.png" width="400" height="300" />
+  <img src="./client/rshop/public/preview3.png" width="400" height="300" />
+  <img src="./client/rshop/public/preview4.png" width="400" height="300" />
+  <img src="./client/rshop/public/preview5.png" width="400" height="300" />
+  <img src="./client/rshop/public/preview6.png" width="400" height="300" />
+  <img src="./client/rshop/public/preview7.png" width="400" height="300" />
+  <img src="./client/rshop/public/preview8.png" width="400" height="300" />
 </div>
 
 
