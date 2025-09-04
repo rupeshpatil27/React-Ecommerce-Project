@@ -10,52 +10,52 @@ This is a full-stack e-commerce web application that provides a seamless user ex
 - **Database**: Utilizes MySQL for storing data.
 - **API Integration**: Developed RESTful APIs for smooth communication between the front-end and back-end.
 
-## Preview
-
-![Project Preview 1](./client/rshop/public/preview1.png)
-
----
-
-![Project Preview 2](./client/rshop/public/preview2.png)
-
----
-
-![Project Preview 3](./client/rshop/public/preview3.png)
-
----
-
-![Project Preview 4](./client/rshop/public/preview4.png)
-
----
-
-![Project Preview 5](./client/rshop/public/preview5.png)
-
----
-
-![Project Preview 6](./client/rshop/public/preview6.png)
-
----
-
-![Project Preview 7](./client/rshop/public/preview7.png)
-
----
-
-![Project Preview 8](./client/rshop/public/preview8.png)
-
----
-
 ## Tech Stack
 
 - **Frontend**: React.js
-- **Backend**: Node.js, Express.js
+- **Backend**: Node.js, Express
 - **Database**: MySQL
 - **State Management**: Redux Toolkit
-- **Authentication**: JWT (JSON Web Token)
+- **Authentication**: JWT (JSON Web Tokens)
+- **Email Verification**: OTP-based, implemented using **Nodemailer**
 
-## Installation
+## Project Screenshots
 
-### 1. Clone the repository:
+<div style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between;">
+  <img src="./client/rshop/public/preview1.png" width="400" height="300" />
+  <img src="./client/rshop/public/preview2.png" width="400" height="300" />
+  <img src="./client/rshop/public/preview3.png" width="400" height="300" />
+  <img src="./client/rshop/public/preview4.png" width="400" height="300" />
+  <img src="./client/rshop/public/preview5.png" width="400" height="300" />
+  <img src="./client/rshop/public/preview6.png" width="400" height="300" />
+  <img src="./client/rshop/public/preview7.png" width="400" height="300" />
+  <img src="./client/rshop/public/preview8.png" width="400" height="300" />
+</div>
+
+
+## Setup Instructions
+
+To run the project locally, follow these steps:
+
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/rupeshpatil27/React-Ecommerce-Project.git
 cd React-Ecommerce-Project
+```
+
+### 2. Install dependencies
+
+For the backend:
+
+```bash
+cd server
+npm install
+```
+
+For the frontend:
+
+```bash
+cd client/rshop
+npm install
+```
