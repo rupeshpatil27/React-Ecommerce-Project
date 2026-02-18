@@ -1,4 +1,8 @@
-import { Navigate, RouterProvider, createBrowserRouter } from "react-router-dom";
+import {
+  Navigate,
+  RouterProvider,
+  createBrowserRouter,
+} from "react-router-dom";
 import "./App.css";
 
 import RootLayout from "../src/Layouts/RootLayout";
@@ -16,8 +20,9 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 const App = () => {
-
-  const { userData, isAuthenticated, isCheckingAuth } = useSelector((state) => state.auth);
+  const { userData, isAuthenticated, isCheckingAuth } = useSelector(
+    (state) => state.auth,
+  );
 
   const dispatch = useDispatch();
 
@@ -27,56 +32,65 @@ const App = () => {
 
   const ProtectedRoute = ({ children }) => {
     if (!isAuthenticated) {
-      return <Navigate to="/auth" replace />
+      return <Navigate to="/auth" replace />;
     }
 
-    return children
-  }
+    return children;
+  };
 
   const RedirectAuthenticatedUsers = ({ children }) => {
     if (isAuthenticated) {
-      return <Navigate to="/" replace />
+      return <Navigate to="/" replace />;
     }
 
-    return children
-  }
+    return children;
+  };
 
-
-  const router = createBrowserRouter([
+  const router = createBrowserRouter(
+    [
+      {
+        path: "/",
+        element: <RootLayout />,
+        children: [
+          { path: "/", element: <Home />, index: true },
+          { path: "auth", element: <Auth /> },
+          { path: "otp-verification", element: <OtpVerification /> },
+          { path: "cart", element: <Cart /> },
+          { path: "wishlist", element: <Wishlist /> },
+          { path: "mobile-phone-store", element: <MobilePhoneStore /> },
+          { path: "product-list", element: <ProductListing /> },
+        ],
+      },
+    ],
     {
-      path: "/",
-      element: <RootLayout />,
-      children: [
-        { path: "/", element: <Home />, index: true },
-        { path: "auth", element: <Auth /> },
-        { path: "otp-verification", element: <OtpVerification /> },
-        { path: "cart", element: <Cart /> },
-        { path: "wishlist", element: <Wishlist /> },
-        { path: "mobile-phone-store", element: <MobilePhoneStore /> },
-        { path: "product-list", element: <ProductListing /> },
-      ],
+      future: {
+        v7_relativeSplatPath: true,
+      },
     },
-  ], {
-    future: {
-      v7_relativeSplatPath: true,
-    },
-  });
+  );
 
   if (isCheckingAuth) {
-    return <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi assumenda consequatur ipsa modi dolore quia sequi soluta nesciunt rem reprehenderit molestiae ad, quae exercitationem. Eius molestiae accusamus nostrum hic. Quae!</div>
+    return (
+      <div className="loading-screen">
+        <div className="loader"></div>
+        <p>Loading...</p>
+      </div>
+    );
   }
 
   return (
     <>
-      <RouterProvider router={router} future={{
-        v7_startTransition: true,
-      }} />
+      <RouterProvider
+        router={router}
+        future={{
+          v7_startTransition: true,
+        }}
+      />
     </>
   );
 };
 
 export default App;
-
 
 // const router = createBrowserRouter([
 //   {
