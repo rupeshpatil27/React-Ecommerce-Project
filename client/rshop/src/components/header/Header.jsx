@@ -6,7 +6,7 @@ import { NavLink, useLocation } from "react-router-dom";
 
 import { CategoriesNav, Dropdown, DropDownMenu } from "../index";
 
-import { DropDownMenuItem} from "../../common/Element";
+import { DropDownMenuItem } from "../../common/Element";
 import { icons } from "../../common/Path";
 
 const Header = () => {
@@ -17,14 +17,14 @@ const Header = () => {
   const { isAuthenticated, userData } = useSelector((state) => state.auth);
   const [productList, SetProductList] = useState([]);
 
-  const location = useLocation()
-  const homePathPattern = /^\/$/
-  const isHome = homePathPattern.test(location.pathname)
+  const location = useLocation();
+  const homePathPattern = /^\/$/;
+  const isHome = homePathPattern.test(location.pathname);
 
   useEffect(() => {
     async function getProductList() {
       const response = await fetch(
-        "https://dummyjson.com/products/category-list"
+        "https://dummyjson.com/products/category-list",
       );
       const data = await response.json();
       SetProductList(data);
@@ -42,9 +42,9 @@ const Header = () => {
     <>
       <div className="header-container">
         <div className="header">
-          <a className="logo-container" href="http://localhost:5173">
+          <NavLink className="logo-container" to="/">
             <h1 className="logo-txt">RShop</h1>
-          </a>
+          </NavLink>
 
           <div className="serach-container">
             <Dropdown data={productList} />
@@ -66,9 +66,13 @@ const Header = () => {
               }}
             >
               <li className="link-item">
-                <NavLink to={isAuthenticated ? "/" : "/auth"} className="nav-link" onMouseEnter={(event) => {
-                onMouseEnter(event.currentTarget);
-              }}>
+                <NavLink
+                  to={isAuthenticated ? "/" : "/auth"}
+                  className="nav-link"
+                  onMouseEnter={(event) => {
+                    onMouseEnter(event.currentTarget);
+                  }}
+                >
                   {icons.Account}
                   {isAuthenticated
                     ? userData?.data?.user?.user_first_name
@@ -79,27 +83,36 @@ const Header = () => {
                 </NavLink>
               </li>
 
-              <li className="link-item" onMouseEnter={() => {
-                setHovering(false);
-              }}>
+              <li
+                className="link-item"
+                onMouseEnter={() => {
+                  setHovering(false);
+                }}
+              >
                 <NavLink to="/cart" className="nav-link">
                   {icons.cart}
                   Cart
                 </NavLink>
               </li>
 
-              <li className="link-item" onMouseEnter={() => {
-                setHovering(false);
-              }}>
+              <li
+                className="link-item"
+                onMouseEnter={() => {
+                  setHovering(false);
+                }}
+              >
                 <NavLink to="/wishlist" className="nav-link">
                   {icons.heart}
                   Whishlist
                 </NavLink>
               </li>
 
-              <li className="link-item" onMouseEnter={() => {
-                setHovering(false);
-              }}>
+              <li
+                className="link-item"
+                onMouseEnter={() => {
+                  setHovering(false);
+                }}
+              >
                 <NavLink to="/cart" className="nav-link">
                   {icons.customercare}
                   Customer Care
@@ -111,7 +124,7 @@ const Header = () => {
                 popoverTop={popoverTop}
                 popoverLeft={popoverLeft}
                 data={DropDownMenuItem.filter((item) =>
-                  !isAuthenticated ? !item.authorized : item
+                  !isAuthenticated ? !item.authorized : item,
                 )}
               />
             </ul>
@@ -126,7 +139,8 @@ const Header = () => {
 
 export default Header;
 
-{/* {HeaderNavItem.map((item, index) =>
+{
+  /* {HeaderNavItem.map((item, index) =>
   index === 0 ? (
     <li
       className="link-item"
@@ -162,4 +176,5 @@ export default Header;
       </NavLink>
     </li>
   )
-)} */}
+)} */
+}

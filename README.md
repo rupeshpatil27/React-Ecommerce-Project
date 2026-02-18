@@ -19,6 +19,10 @@ This is a e-commerce web application that provides a seamless user experience, s
 - **Authentication**: JWT (JSON Web Tokens)
 - **Email Verification**: OTP-based, implemented using **Nodemailer**
 
+## 🚀 Live Demo
+
+- [**Live Demo**](https://react-ecommerce-project-five.vercel.app/)
+
 ## Project Screenshots 📸
 
 <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between;">
